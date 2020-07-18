@@ -1,8 +1,11 @@
 # Começando
-* Instale Python 3
 
-# Tutorial
+Instale Python 3
 
-Abra o terminal e execute o comando:
+## Servidor de Arquivos
 
-`python -m http.server`
+Abra o terminal e execute o comando `python -m http.server`.
+
+## Servidor de aplicação
+
+Abra o terminal e execute o comando `python -m http.server --cgi`.
