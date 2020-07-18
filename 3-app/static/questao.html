@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Questoes!</title>
+    <script>
+        function process(data) {
+            document.getElementById('qnome').textContent = data['nome']
+            document.getElementById('qtexto').textContent = data['texto']
+        }
+        fetch('/questao')
+            .then(response => response.json())
+            .then(data => process(data));
+    </script>
+</head>
+<body>
+
+    <div>
+        <ul>
+            <li><span id='qnome'></span></li>
+            <li><span id='qtexto'></span></li>
+        </ul>
+    </div>
+</body>
+</html>
